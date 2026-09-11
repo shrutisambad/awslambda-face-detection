@@ -1,4 +1,3 @@
-
 import boto3
 import json
 import base64
@@ -11,6 +10,10 @@ BUCKET_NAME = "shruti--11"
 
 
 def lambda_handler(event, context):
+
+    # This line is added to test GitHub automatic deployment
+    print("GitHub automatic deployment test successful!")
+
     try:
         # Get request body from API Gateway
         body = json.loads(event["body"])
